@@ -102,9 +102,9 @@ public class CeasarBreaker {
        
     }
     public void testDecryptNoKeys(){
-        decryptNoKeys("Akag tjw Xibhr awoa aoee xakex znxag xwko");
-        //FileResource resource = new FileResource("CommonWordsData/mysteryTwoKeysPractice.txt");
-        //decryptNoKeys(resource.asString());
+        //decryptNoKeys("Aal uttx hm aal Qtct Fhljha pl Wbdl. Pvxvxlx!");
+        FileResource resource = new FileResource();
+        decryptNoKeys(resource.asString());
     }
     
     public String halfOfString(String message, int start){
