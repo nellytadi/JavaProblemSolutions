@@ -44,6 +44,7 @@ public class GladLib {
     }
     
     private String randomFrom(ArrayList<String> source){
+        System.out.println(source);
         int index = myRandom.nextInt(source.size());
         return source.get(index);
     }

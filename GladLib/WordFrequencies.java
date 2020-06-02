@@ -26,13 +26,16 @@ public class WordFrequencies {
             }
             
         }
-        
+        int large = 0;
         for(String w : map.keySet()){
+            
             int occurence = map.get(w);
             
-            if(occurence > 100){
-                System.out.println(w+ " \t " + occurence);
-            }
+            if(occurence > large){
+                large = occurence;
+                //System.out.println(w+ " \t " + occurence);
+           }
         }
+        System.out.println(large);
     }
 }

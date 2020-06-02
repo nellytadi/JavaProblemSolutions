@@ -35,7 +35,7 @@ public class CodonCount {
             }
         }
         
-        System.out.println(main);
+        System.out.println(main +"\t"+map.size());
         
         for(String w : map.keySet()){
             System.out.println(w+ " \t " + map.get(w));
@@ -75,8 +75,15 @@ public class CodonCount {
     
     public void tester(){
         FileResource resource = new FileResource();
-        buildCodonMap(0,resource.asString().toUpperCase().trim());
-        printCodonCounts(1,5);
+        buildCodonMap(1,resource.asString().toUpperCase().trim());
+        
+        //FileResource resource1 = new FileResource();
+        //buildCodonMap(1,resource1.asString().toUpperCase().trim());
+        
+        //FileResource resource2 = new FileResource();
+        //buildCodonMap(2,resource2.asString().toUpperCase().trim());
+        
+        //printCodonCounts(1,5);
         System.out.println("The most common codon is " + getMostCommonCodon());
     }
     

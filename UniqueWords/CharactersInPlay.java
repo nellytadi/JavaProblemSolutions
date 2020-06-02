@@ -61,11 +61,11 @@ public class CharactersInPlay {
     public void tester(){
         
         findAllCharacters();
-        //for(int i =0; i < counts.size() ; i++){
-        //    if(counts.get(i) > 10){
-        //        System.out.println(characters.get(i) + "\t" + counts.get(i));
-        //    }
-      //  }
+        for(int i =0; i < counts.size() ; i++){
+            if(counts.get(i) < 100 && counts.get(i) != 1){
+                System.out.println(characters.get(i) + "\t" + counts.get(i));
+            }
+       }
         
         charactersWithNumParts(10,15);
         
